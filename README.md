@@ -1,7 +1,7 @@
 
 # Keylogger & Reverse Shell Integration
 
-This repository contains a **keylogger** for macOS and a **reverse shell** integration script. The keylogger captures keystrokes from a target macOS device and sends the logs to a remote Kali Linux machine over a persistent network connection.
+This repository contains a keylogger made by **Casey Scarborough** for macOS and a **reverse shell** integration script. The keylogger captures keystrokes from a target macOS device and sends the logs to a remote Kali Linux machine over a persistent network connection.
 
 ## Features
 - **Reverse Shell**: Opens a reverse shell from the macOS device to the Kali Linux machine.
@@ -14,13 +14,14 @@ This repository contains a **keylogger** for macOS and a **reverse shell** integ
 - **macOS device**: The target device you wish to run the keylogger on.
 - **Kali Linux**: The attacking machine (or the machine you are listening on).
 - **Python 3**: Ensure Python 3 is installed on the macOS device.
+- **Net-Cat**: Net Cat has to be installed on both machines
 - **Git**: To clone the repository.
 
 ## Setup Instructions
 
 ### 1. Clone This Repository
 
-On your **Kali Linux** machine, clone the repository using Git:
+On your **Kali Linux** machine, and your **macOS device**, clone the repository using Git:
 
 ```bash
 git clone https://github.com/TomatoBr0/keylogger-sender.git
@@ -66,8 +67,3 @@ To stop the keylogger on the macOS device, you can simply terminate the process 
 
 This repository is intended for educational purposes and ethical penetration testing only. Always ensure that you have proper authorization before deploying any monitoring software.
 
----
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

